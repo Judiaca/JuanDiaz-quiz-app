@@ -2,13 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />    
+    <title>Quiz App - Accessible Quiz</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  
   <body>
-    <h1>Quiz home page</h1>
+    <div class="container">
+      <header role="banner">
+        <h1>Quiz App</h1>
+      </header>
+      <main role="main">
+        <section aria-labelledby="question-1">
+          <article class="question-card">
+            <div class="question-header">
+              <h2 id="question-1">
+                What two words every programmer learned to code first?
+              </h2>
+            </div>
+            <form>
+              <div class="options">
+                <input
+                  type="radio"
+                  id="q1a"
+                  name="question1"
+                  value="Hello, world."
+                />
+                <label for="q1a">Hello, world.</label><br />
+                <input
+                  type="radio"
+                  id="q1b"
+                  name="question1"
+                  value="Hello, there."
+                />
+                <label for="q1b">Hello, there.</label><br />
+                <input
+                  type="radio"
+                  id="q1c"
+                  name="question1"
+                  value="Welcome, world."
+                />
+                <label for="q1d">Hi, everyone.</label>
+              </div>
+            </form>
+          </article>
+        </section>
+
+        <section aria-labelledby="question-2">
+          <article class="question-card">
+            <div class="question-header">
+              <h2 id="question-2">
+                What is the most popular programming problem?
+              </h2>
+            </div>
+            <form>
+              <div class="options">
+                <input
+                  type="radio"
+                  id="q2a"
+                  name="question2"
+                  value="Missing a Semicolon."
+                />
+                <label for="q2a">Missing a Semicolon.</label><br />
+                <input
+                  type="radio"
+                  id="q2b"
+                  name="question2"
+                  value="Null Pointer Exception."
+                />
+                <label for="q2c">Out of Memory.</label><br />
+                <input
+                  type="radio"
+                  id="q2d"
+                  name="question2"
+                  value="Syntax Error."
+                />
+                <label for="q2d">Syntax Error.</label>
+              </div>
+            </form>
+          </article>
+        </section>
+        <section aria-labelledby="question-3">
+          <article class="question-card">
+            <div class="question-header">
+              <h2 id="question-3">What is the golden rule in programming</h2>
+            </div>
+            <form>
+              <div class="options">
+                <input
+                  type="radio"
+                  id="q3a"
+                  name="question3"
+                  value="If it works, don't touch it."
+                />
+                <label for="q3a">If it works, don't touch it.</label><br />
+                <input
+                  type="radio"
+                  id="q3b"
+                  name="question3"
+                  value="Always refactor code."
+                />
+                <label for="q3c">Always refactor code.</label><br />
+                <input
+                  type="radio"
+                  id="q2d"
+                  name="question-3"
+                  value="Comment everything."
+                />
+                <label for="q2d">Comment everything.</label>
+              </div>
+            </form>
+          </article>
+        </section>
+
+        <!-- Repeat for additional questions -->
+      </main>
+      <footer role="contentinfo">
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a
+                href="#"
+                class="nav-item active"
+                aria-label="Home"
+                aria-current="page"
+                ><img src="./assets/images/home.png" alt="Home"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="nav-item" aria-label="Bookmarks"
+                ><img src="./assets/images/bookmark.png" alt="bookmark"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="nav-item" aria-label="Profile"
+                ><img src="./assets/images/profile.png" alt="Profile" />;</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
