@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App - Accessible Quiz</title>
+    <title>Quiz App - deeply serious</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,7 +17,7 @@
             <div class="question-header">
               <h2 id="question-1">
                 What two words every programmer learned to code first?
-              </h2>
+              </h2>             
             </div>
             <form>
               <div class="options">
@@ -42,7 +42,11 @@
                   value="Welcome, world."
                 />
                 <label for="q1d">Hi, everyone.</label>
+                
               </div>
+              <button class="show-answer">Show Answer</button>
+              <button class="hide-answer" style="display: none;">Hide Answer</button>
+              <div class="answer">Hello, world.</div>
             </form>
           </article>
         </section>
@@ -72,12 +76,16 @@
                 <label for="q2c">Out of Memory.</label><br />
                 <input
                   type="radio"
-                  id="q2d"
+                  id="q2c"
                   name="question2"
                   value="Syntax Error."
                 />
-                <label for="q2d">Syntax Error.</label>
+                <label for="q2c">Syntax Error.</label>
               </div>
+            </div>
+            <button class="show-answer">Show Answer</button>
+            <button class="hide-answer" style="display: none;">Hide Answer</button>
+            <div class="answer">Missing a Semicolon.</div>
             </form>
           </article>
         </section>
@@ -101,28 +109,69 @@
                   name="question3"
                   value="Always refactor code."
                 />
-                <label for="q3c">Always refactor code.</label><br />
+                <label for="q3b">Always refactor code.</label><br />
                 <input
                   type="radio"
-                  id="q2d"
+                  id="q3c"
                   name="question-3"
                   value="Comment everything."
                 />
-                <label for="q2d">Comment everything.</label>
+                <label for="q3c">Comment everything.</label>
               </div>
+            </div>
+            <button class="show-answer">Show Answer</button>
+            <button class="hide-answer" style="display: none;">Hide Answer</button>
+            <div class="answer">If it works, don't touch it.</div>
+            </form>
+          </article>
+        </section>
+        <section aria-labelledby="question-4">
+          <article class="question-card">
+            <div class="question-header">
+              <h2 id="question-4">
+                What is the biggest lie in computer programming?
+              </h2>
+            </div>
+            <form>
+              <div class="options">
+                <input
+                  type="radio"
+                  id="q4a"
+                  name="question4"
+                  value="HTML is a programming language."
+                />
+                <label for="q4a">HTML is a programming language.</label><br />
+                <input
+                  type="radio"
+                  id="q4b"
+                  name="question4"
+                  value="Java is obsolete"
+                />
+                <label for="q4c">Java is obsolete.</label><br />
+                <input
+                  type="radio"
+                  id="q2d"
+                  name="question2"
+                  value="Coding is easy."
+                />
+                <label for="q2d">Coding is easy.</label>
+              </div>
+            </div>
+            <button class="show-answer">Show Answer</button>
+            <button class="hide-answer" style="display: none;">Hide Answer</button>
+            <div class="answer">HTML is a programming language.</div>
             </form>
           </article>
         </section>
 
         <!-- Repeat for additional questions -->
       </main>
+      <!--============ footer =============-->
       <footer role="contentinfo">
         <nav aria-label="Main navigation">
           <ul class="nav-list">
             <li>
-              <a
-                href="#"
-                class="nav-item active"
+              <a href="#" class="nav-item active"
                 aria-label="Home"
                 aria-current="page"
                 ><img src="./assets/images/home.png" alt="Home"
