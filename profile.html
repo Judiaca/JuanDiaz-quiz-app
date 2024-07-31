@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Profile</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header role="banner">
+        <h1>Quiz App</h1>
+      </header>
+      <main role="main">
+        <section aria-labelledby="profile">
+          <article class="profile-card">
+            <h2 id="profile">Max Doe</h2>
+            <p>
+              About me: <br />
+              <textarea
+                rows="4"
+                cols="50"
+                placeholder="Write something about yourself..."
+              ></textarea>
+            </p>
+            <div class="profile-stats">
+              <div class="stat">
+                <span class="stat-icon">&#128172;</span>
+                <span class="stat-number">12</span>
+              </div>
+              <div class="stat">
+                <span class="stat-icon">&#9733;</span>
+                <span class="stat-number">4</span>
+              </div>
+            </div>
+            <div class="profile-settings">
+              <label for="dark-mode">Dark Mode:</label>
+              <input
+                type="checkbox"
+                id="dark-mode"
+                aria-label="Enable dark mode"
+              />
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer role="contentinfo">
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-item" aria-label="Home" aria-current="page"
+                ><img src="./assets/images/home.png" alt="Home"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="nav-item active" aria-label="Bookmarks"
+                ><img src="./assets/images/bookmark.png" alt="bookmark"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="nav-item" aria-label="Profile"
+                ><img src="./assets/images/profile.png" alt="Profile" />;</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
